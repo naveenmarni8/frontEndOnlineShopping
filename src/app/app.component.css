@@ -1,0 +1,30 @@
+.NavBar
+{
+    background-color: rgb(57, 74, 69);
+    display: flex;
+    margin: 0px;
+}
+
+.NavChild
+{
+    width: 12vw;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-top: .5%;
+    margin-bottom: .5%;
+    background-color: transparent;
+    padding: 1em;
+    color: white;
+    border: 4px solid black;
+    font-size: 1.1em;
+    border-radius: 2px;
+    outline: none!important;
+}
+
+.NavChild:hover{
+    cursor: pointer;
+    border: 2px solid grey;
+}
+.NavChild:active{
+    border: none;
+}

@@ -1,0 +1,11 @@
+<div *ngIf="isAuth" class="d-flex flex-row list-unstyled border-bottom border-warning">
+    <div class="p-2 flex-fill"><Button routerLink="/home" class="border-0 h2">online Shopping</Button></div>
+      <div class="p-2 d-inline-flex flex-fill ">
+      <input #Searchbox class="form-control rounded" type="search" placeholder="search products" name="" id="">
+      <button (click)="onSearch(Searchbox.value)" class=" btn btn-outline-primary">Search</button>
+      </div>
+      <div class="p-2 flex-fill m-2 ">
+      <button routerLink="/services" class="mx-2 text-decoration-none bg-light text-dark">Services</button>
+      <button routerLink="/cart" class="mx-2 text-decoration-none bg-light text-dark">Cart</button>
+      <button (click)="onLogout()" class="mx-2 text-decoration-none bg-light text-dark">Logout</button></div>
+    </div>

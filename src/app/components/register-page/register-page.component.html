@@ -1,0 +1,26 @@
+<div class="container">
+
+    <div class="row">
+        <h1 class="col-sm mt-5">
+            Signup Page
+        </h1>
+    </div>
+    <div class="row">
+        <div class="col-sm mt-5">
+            <form [formGroup]="SignUpForm">
+                <input formControlName="loginId" type="text" class="form-control my-2" placeholder="loginId">
+                <input formControlName="email" type="email" class="form-control my-2" placeholder="email">
+                <input formControlName="firstName" type="text" class="form-control my-2" placeholder="firstName">
+                <input formControlName="lastName" type="text" class="form-control my-2" placeholder="lastName">
+                <input formControlName="password" type="password" class="form-control my-2" placeholder="password">
+                <input formControlName="confirmPassword" type="password" class="form-control my-2"
+                    placeholder="confirmPassword">
+                <input formControlName="role" type="text" class="form-control my-2" placeholder="ROLE">
+                <input (click)="register()" type="submit" class="btn btn-primary my-5" value="Sign Up" />
+            </form>
+        </div>
+    </div>
+    <div *ngIf="isRegistered" class="alert alert-success mt-5">
+        Registered Succesfully!!
+    </div>
+</div>

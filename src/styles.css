@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+.inputField
+{
+font-size: 1.5em;
+width: 32vw;
+border-radius: 5px;
+padding: .2em;
+border: 2px solid darkgrey;
+outline: none!important;
+}
+
+.card
+{
+    width: 40vw;
+    margin: auto;
+    background-color: transparent;
+    padding: 1em;
+}
+
+.Button
+{
+    font-size: 1.5em;
+    border-radius: 5px;
+    padding: .2em;
+    border: 2px solid lightgrey;
+    margin-left: .2em;
+    outline: none!important;
+}
+
+.Button:hover{
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

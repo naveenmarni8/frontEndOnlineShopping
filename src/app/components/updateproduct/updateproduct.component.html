@@ -1,0 +1,29 @@
+<div class="container my-4">
+    <div class="row">
+        <div *ngFor="let product of productsList" class="col-lg-3 mb-4">
+            <div class="card" style="width: 18rem; height: 25rem;">
+                <img class="card-img-top mx-4 w-75"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe_vmFN7-Ewei7k3d2LSRUshf_G1koSgdsFg&usqp=CAU"
+                    alt="Card image cap">
+                <div class="card-body mx-2">
+                    <h6 class="card-title">{{product.productName}}</h6>
+                    <p class="card-text my-0">Rs. {{product.price}}</p>
+                    <div class="row my-2">
+                        <label for="status" class="col-sm-4 col-form-label">Status</label>
+                        <div class="col-sm-8">
+                            <input type="text" [(ngModel)]="product.productStatus" class="form-control" id="Qty"
+                                name="status">
+                        </div>
+                    </div>
+                    <div class="row my-2">
+                        <label for="Qty" class="col-sm-4 col-form-label">Qty</label>
+                        <div class="col-sm-8">
+                            <input type="text" [(ngModel)]="product.qty" class="form-control" id="Qty" name="Qty">
+                        </div>
+                    </div>
+                    <button (click)="updateProduct(product)" class="btn btn-primary my-2 mx-1">Update product</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

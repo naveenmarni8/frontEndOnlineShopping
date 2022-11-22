@@ -1,0 +1,12 @@
+<div class="card my-5" style="width: 75vw;">
+    <div class="card-header">
+      Cart Items
+    </div>
+    <div class="card-body" *ngFor="let item of cartItems">
+      <h5 class="card-title">{{item.productName}}</h5>
+      <p class="card-text">Rs. {{item.price}}</p>
+      <button (click)="remove(item.id)"  class="btn btn-primary">Remove</button>
+    </div>
+    <h5 class="card-title mx-3 my-2">Total Cost is Rs. {{totalCost}} | COD</h5>
+    <button (click)="placeOrder()" [disabled]="isItems"  class="btn btn-primary mx-3" style="width: 8rem;">Place Order</button>
+  </div>
